@@ -13,7 +13,7 @@ const Sidebar = () => {
     
 
   return (
-    <div className='sticky left-0 top-0 h-screen w-fit flex flex-col text-white bg-dark-bg2 justify-between pt-20'>
+    <div className='sticky left-0 top-0 h-screen w-fit flex flex-col text-white bg-dark-bg2 justify-between pt-20 max-sm:hidden lg:w-[264px]'>
       <div className='flex flex-col gap-6 px-2'>
         {SidebarLinks.map((links) =>{
             const isActive = pathname === links.url|| pathname.startsWith(links.url)
