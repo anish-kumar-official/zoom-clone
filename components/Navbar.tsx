@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import MobileSidebar from './MobileSidebar'
 
 const Navbar = () => {
     return (
-        <nav className='p-4 bg-dark-bg2 fixed z-50 w-full justify-between'>
+        <nav className='p-4 bg-dark-bg2 fixed z-50 w-full justify-between items-center flex'>
             <Link
             href='/'
             className='flex gap-4 items-center'>
@@ -20,9 +21,9 @@ const Navbar = () => {
 
             <div>
                 {/* clerk user managment */}
+            <MobileSidebar/>
             </div>
 
-            MobileSidebar
 
 
 
