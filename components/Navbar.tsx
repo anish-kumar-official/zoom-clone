@@ -20,7 +20,7 @@ const Navbar = () => {
                 <p className='text-white text-2xl font-extrabold max-sm:hidden'>VOOM</p>
             </Link>
 
-            <div>
+            <div className='flex items-center justify-between'>
             <SignedIn>
               <UserButton />
             </SignedIn>

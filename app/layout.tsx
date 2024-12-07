@@ -26,7 +26,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider>
+      <ClerkProvider
+      appearance={{
+        layout : {
+          logoImageUrl : '/icons/yoom-logo.svg',
+          socialButtonsVariant : 'iconButton'
+          
+        },
+       variables : {
+        colorBackground : '#1C1F2E',
+        // colorPrimary : '#fff',
+        colorText : '#fff'
+       },
+       elements: {
+        formButtonPrimary: "bg-[#0E78F9]",
+        rootBox: "bg-[#1C1F2E]",
+        formFieldInput: "bg-[#252A41] text-white",
+        footerActionLink : 'text-white',
+        formFieldInputShowPasswordButton : 'fill-white'
+      }
+      }}
+      >
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
